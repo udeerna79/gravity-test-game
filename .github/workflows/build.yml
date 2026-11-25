@@ -45,7 +45,7 @@ jobs:
             -S res \
             -I "$PLATFORM/android.jar"
 
-          javac --release 17 \
+          javac -source 17 -target 17 \
             -bootclasspath "$PLATFORM/android.jar" \
             -d build/obj \
             build/gen/com/gravitystudios/testgame/R.java \
